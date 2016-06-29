@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.paper-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  /* red border, white space, blue lines */
+  background-image: -webkit-linear-gradient(left, red, red), -webkit-linear-gradient(top, white 0px, white 89px, rgba(255, 255, 255, 0) 120px), -webkit-repeating-linear-gradient(white 0px, white 18px, lightblue 19px, white 20px);
+  background-image: -moz-linear-gradient(left, red, red), -moz-linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, lightblue 19px, white 20px);
+  background-image: -ms-linear-gradient(left, red, red), -ms-linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, lightblue 19px, white 20px);
+  background-image: -o-linear-gradient(left, red, red), -o-linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, lightblue 19px, white 20px);
+  background-image: linear-gradient(left, red, red), linear-gradient(top, white 0px, white 69px, rgba(255, 255, 255, 0) 70px), repeating-linear-gradient(white 0px, white 18px, lightblue 19px, white 20px);
+  background-size: 1px, auto, auto 30px;
+  background-repeat: repeat-y, no-repeat, repeat;
+  background-position: 15% 0px, 0px 0px, 0px 0px;
+}
+
+.paper {
+  margin: 0;
+  display: block;
+  font: 15pt Arial, sans-serif;
+  line-height: 30px;
+  padding-top: 80px;
+  padding-left: 120px;
+  padding-right: 100px;
+  text-align: justify;
+}
+
+.paper:focus {
+  outline: none;
+}
+
+.paper-wrapper .nav label {
+  width: 100px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+  transition: opacity .2s;
+  color: darkgray;
+  font-size: 56pt;
+  text-align: center;
+}
+.paper-wrapper:hover > .nav label {
+  opacity: 0.5;
+  display: block;
+}
+.paper-wrapper .nav label:hover {
+  opacity: 1;
+  display: block;
+}
+.paper-wrapper .nav .next {
+  right: 0;
+}

@@ -1,0 +1,7 @@
+<div class="paper-wrapper">
+  <p class="paper" contenteditable #page (keyup)="onKeyup(page.innerText)">{{pageContent}}</p>
+  <div class="nav">
+    <label *ngIf="currentPage > 1" class="prev" (click)="gotoPrevPage()">&#x2039;</label>
+    <label *ngIf="currentPage < 4" class="next" (click)="gotoNextPage()">&#x203a;</label>
+  </div>
+</div>
