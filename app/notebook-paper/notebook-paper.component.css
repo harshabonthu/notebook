@@ -52,10 +52,12 @@
   opacity: 0.5;
   display: block;
 }
+
 .paper-wrapper .nav label:hover {
   opacity: 1;
   display: block;
 }
+
 .paper-wrapper .nav .next {
   right: 0;
 }
