@@ -3,7 +3,7 @@ export class NotebookPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getPaperText() {
+    return element(by.css('notebook-paper p')).getText();
   }
 }

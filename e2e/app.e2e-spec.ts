@@ -7,8 +7,8 @@ describe('notebook App', function() {
     page = new NotebookPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying Enter Some Notes Here in Page 1', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getPaperText()).toEqual('Enter Some Notes Here in Page 1');
   });
 });
