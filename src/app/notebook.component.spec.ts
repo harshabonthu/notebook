@@ -6,13 +6,13 @@ import {
   expect, it, xit,
   async, inject
 } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { NoteBookAppComponent } from './notebook.component';
 
-beforeEachProviders(() => [AppComponent]);
+beforeEachProviders(() => [NoteBookAppComponent]);
 
 describe('App: Notebook', () => {
   it('should create the app',
-      inject([AppComponent], (app: AppComponent) => {
+      inject([NoteBookAppComponent], (app: NoteBookAppComponent) => {
     expect(app).toBeTruthy();
   }));
 });

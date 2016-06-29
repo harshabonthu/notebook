@@ -1,2 +1,3 @@
 export * from './environment';
-export * from './app.component';
+export {NoteBookAppComponent} from './notebook.component';
+export {routes, APP_ROUTER_PROVIDERS} from './notebook.routes';
